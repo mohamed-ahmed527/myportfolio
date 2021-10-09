@@ -1,0 +1,12 @@
+section(id="skills" class="mt-24")
+  .container
+    h1(class="title text-center text-4xl my-32") Skills
+    div(class="parent lg:flex justify-between my-20")
+      div(class="pic lg:w-2/5 sm:w-11/12 my-6")
+        img(src="../assets/skills.jpg", alt="", loading="lazy")
+
+      div(class="info lg:w-1/2 sm:w-11/12 ")
+        each val in ["HTML5", "CSS3", "BOOTSTRAP4", "JAVASCRIPT", "JQUERY", "SCSS", "TAILWIND css","PUG js", "REACT js"]
+          div(class="my-3 rounded-md pl-2 py-1 tracking-wider" ) #{val}
+
+

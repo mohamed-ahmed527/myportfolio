@@ -1,0 +1,11 @@
+#skills{
+  .container{
+    .parent{
+      .info{
+        >div{
+          background-color: $blue1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+#projects{
+  .container{
+    .parent{
+      .project{
+        img{
+          transform: scale(0.95);
+          transition: 0.4s all;
+        }
+        a{
+          background-color: $red1;
+          position: absolute;
+          top: 47%;
+          left: 39%;
+          overflow: hidden;
+          opacity: 0;
+          transition: 0.4s all;
+          &::before{
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: -110%;
+            width: 100%;
+            height: 100%;
+            background-color: $blue1;
+            opacity: 0.4;
+            transform: skew(-35deg);
+            transition: 0.4s all;
+          }
+          &:hover::before{
+            left: 110%;
+          }
+        }
+        &:hover a{
+          opacity: 1;
+        }
+        &:hover img{
+          transform: scale(1);
+        }
+        /*******span*******/
+        span{
+          position: absolute;
+          background-color: gold;
+          transition: 0.7s all;
+          z-index:100;
+        }
+        span:nth-of-type(1){
+          top: 0px;
+          left: 2px;
+          width: 8%;
+          height: 1%;
+        }
+        span:nth-of-type(2){
+          bottom: 0px;
+          right: 2px;
+          width: 8%;
+          height: 1%;
+        }
+        span:nth-of-type(3){
+          bottom: 0px;
+          right: 2px;
+          width: 1%;
+          height: 12%;
+        }
+        span:nth-of-type(4){
+          top: 0px;
+          left: 2px;
+          width: 1%;
+          height: 12%;
+        }
+        &:hover span:nth-of-type(1) , &:hover span:nth-of-type(2){
+          width: 99%;
+        }
+        &:hover span:nth-of-type(3) , &:hover span:nth-of-type(4){
+          height: 99%;
+        }
+      }
+    }
+  }
+}

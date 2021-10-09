@@ -1,0 +1,57 @@
+nav{
+  padding: 10px 0px;
+  .container{
+    .parent{
+      overflow: hidden;
+      .logo{
+        float: left;
+        img{
+          width: 25px;
+          margin-right: 5px;
+          display: inline;
+        }
+        span{
+          font-size: 18px;
+        }
+      }
+      .list{
+        float: right;
+        ul{
+          display: flex;
+          li{
+            padding: 5px ;
+            margin: 0px 10px;
+            font-size: 19px;
+            letter-spacing: 1.5;
+            a:hover{
+              color: $red1;
+            }
+          }
+        }
+      }
+      .menu{
+        display: none;
+        font-size: 32px;
+      }
+    }
+  }
+}
+/***************media query **********/
+@media screen and (max-width:992px) {
+  nav .container .parent .menu {
+    display: inline;
+  }
+  nav .container .parent .logo , nav .container .parent .list {
+    float: none;
+  }
+  nav .container .parent .list {
+    display: none;
+  }
+  nav .container .parent .list ul {
+    display: block;
+  }
+  nav .container .parent .list ul li {
+    margin: 10px 0px ;
+  }
+  
+}
