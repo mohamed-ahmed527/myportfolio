@@ -1,0 +1,15 @@
+#skills{
+  .container{
+    .parent{
+      .info{
+        >div{
+          cursor: pointer;
+          background-color: $blue1;
+        }
+        >div:hover{
+          background-color: #0d539f;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../abstracts/variables';
+*{
+  outline-style: none;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-image: url(../../assets/background.jpg);
+  color: $white1;
+  overflow-x: hidden;
+  font-family: 'Righteous', cursive;
+}
+a{
+  color: unset;
+}
+.container{
+  width: 85%;
+  margin: auto;
+}
+.title{
+  letter-spacing: 4;
+}
+/*********************/
+@keyframes moving1 {
+  from{
+    top: 10%;
+  }
+  to{
+    top: 14%;
+  }
+}
+@keyframes moving2 {
+  from{
+    top: 80%;
+  }
+  to{
+    top: 84%;
+  }
+}
+
+.move:nth-of-type(1){
+  position: fixed;
+  top: 10%;
+  left: 4%;
+  z-index: -1;
+  animation-name: moving1;
+  animation-duration: 1.5s ;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.move:nth-of-type(2){
+  position: fixed;
+  top: 80%;
+  right: 1%;
+  z-index: -1;
+  animation-name: moving2;
+  animation-duration: 2s ;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
